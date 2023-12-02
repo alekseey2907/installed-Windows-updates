@@ -13,7 +13,7 @@ class QSimpleServer : public QTcpServer
 {
     Q_OBJECT
 public:
-   /* explicit QSimpleServer(QObject *parent =nullptr);*/
+
     QSimpleServer();
     void incomingConnection(qintptr handle);
 
@@ -21,8 +21,7 @@ signals:
 
 
 public slots:
-//    void onReadyRead();
-//    void onDisconnected();
+
 
 };
 

@@ -1,10 +1,10 @@
 #include "qsimpleserver.h"
 
-QSimpleServer::QSimpleServer(/*QObject *parent*/) :
-    QTcpServer(/*parent*/)
+QSimpleServer::QSimpleServer() :
+    QTcpServer()
 {
-   QSimpleServer simple;
-    if(simple.listen(QHostAddress::Any, 80))
+
+    if(this->listen(QHostAddress::Any, 80))
     {
         qDebug()<< "Listeen";
     }
